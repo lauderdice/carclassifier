@@ -7,6 +7,7 @@ from utils.wikirequests import car_summary_from_wiki
 from utils.youtuberequests import query_yt
 import uuid
 
+
 from flask_swagger_ui import get_swaggerui_blueprint
 app = Flask(__name__)
 set_app_config(app)
@@ -41,7 +42,7 @@ def classify():
         try:
             classificationresult = session["classification_result"]
         except:
-            return url_for("/")
+            return render_template('index.html')
     return render_template('prediction.html', predictions=classificationresult)
 
 
@@ -56,13 +57,6 @@ def get_car_details(car):
         print(wiki_summary)
         session["wiki_summary"] = wiki_summary
         session["reviews"] = car_reviews
-
-    else:
-        try:
-            car_reviews = session["reviews"]
-            wiki_summary = session["wiki_summary"]
-        except:
-            return url_for("/")
     try:
         car_file = session["filename"]
     except:
@@ -78,4 +72,4 @@ def uploaded_file(filename):
 #app.run(host="0.0.0.0", debug=True,port=5000)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port = 1337, debug=True)
+    app.run(host='0.0.0.0', debug=True)
