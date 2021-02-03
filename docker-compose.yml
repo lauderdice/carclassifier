@@ -7,6 +7,7 @@ services:
     volumes:
       - ./:/var/www
       - ./nginx.conf:/etc/nginx/conf.d/
+      - ./web/static:/static
     ports:
       - 1338:80
     depends_on:
