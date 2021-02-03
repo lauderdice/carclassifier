@@ -1,3 +1,6 @@
-
+.DS_Store
 /web/model/cars196model.h5
 /web/uploads/
+/.keras
+__pycache__
+.idea

@@ -37,9 +37,9 @@ ImageNetModel = tf.keras.applications.Xception(
     include_top=False,
 )
 
-ImageNetModel.trainable = True # We want to update all the model weights, so set this to true.
+ImageNetModel.trainable = True
 
-# Create new model on surrounding our pretrained base model.
+
 inputs = tf.keras.Input(shape=(height, width, 3))
 
 norm_layer = keras.layers.experimental.preprocessing.Normalization()
@@ -51,10 +51,10 @@ norm_layer.set_weights([mean, var])
 
 
 x = ImageNetModel(x, training=False)
-x = keras.layers.GlobalAveragePooling2D()(x) # this is a neural network operation to help adapt the features learned by the pretrained model to our specific task.
-x = keras.layers.Dropout(0.5)(x)  # Regularize with dropout
-num_outputs = ds_info.features['label'].num_classes # This is the number of output variables we want, 196 in this case.
-outputs = keras.layers.Dense(num_outputs, activation="softmax")(x) # Use activation=softmax for classification, and activation=None for regression.
+x = keras.layers.GlobalAveragePooling2D()(x)
+x = keras.layers.Dropout(0.5)(x)
+num_outputs = ds_info.features['label'].num_classes
+outputs = keras.layers.Dense(num_outputs, activation="softmax")(x)
 model = keras.Model(inputs, outputs)
 model.summary()
 
@@ -62,7 +62,7 @@ model.summary()
 learning_rate = 5.0e-5
 
 model.compile(
-    optimizer=keras.optimizers.Adam(learning_rate=learning_rate),  # Low learning rate
+    optimizer=keras.optimizers.Adam(learning_rate=learning_rate),
     loss=keras.losses.SparseCategoricalCrossentropy(),
     metrics=[keras.metrics.SparseCategoricalAccuracy()],
 )
