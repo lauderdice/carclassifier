@@ -8,7 +8,8 @@ import tensorflow_datasets as tfds
     "cars196",
     split=["train", "test"],
     as_supervised=True,
-    with_info=True
+    with_info=True,
+    download=True
 )
 
 
@@ -67,7 +68,7 @@ model.compile(
     metrics=[keras.metrics.SparseCategoricalAccuracy()],
 )
 
-epochs = 50
+epochs = 1
 model.fit(train_ds, epochs=epochs, validation_data=test_ds)
 
 model.save("cars196model50epochs.h5", save_format="h5")
