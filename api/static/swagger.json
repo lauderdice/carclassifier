@@ -1,0 +1,66 @@
+{
+  "info": {
+    "description": "CarClassifier",
+    "version": "1.0.0",
+    "title": "CarClassifier"
+  },
+  "tags": [
+    {
+      "name": "CarClassifier API",
+      "description": "Example API"
+    }
+  ],
+  "paths": {
+    "/classify": {
+      "post": {
+        "tags": [
+          "Classify car"
+        ],
+        "consumes": "multipart/form-data",
+        "parameters": [
+          {
+            "name": "file",
+            "in": "formData",
+            "required": true,
+            "description": "car image",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Failed. Misunderstood Request."
+          }
+        }
+      }
+    },
+    "/cardetails/{car}": {
+      "get": {
+        "tags": [
+          "Car details"
+        ],
+        "summary": "Get car details based on car",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "car",
+            "required": true,
+            "description": "Car type",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Failed. Misunderstood Request."
+          }
+        }
+      }
+    }
+  },
+  "swagger": "2.0"
+}
