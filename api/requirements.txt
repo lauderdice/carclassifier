@@ -120,3 +120,4 @@ wrapt==1.12.1
 WTForms==2.3.3
 zipp==3.4.0
 flask_swagger_ui
+flask-cors
