@@ -23,4 +23,4 @@ services:
     expose:
       - 8000
     env_file:
-      - web/project.env
+      - api/project.env
