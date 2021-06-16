@@ -51,7 +51,7 @@ const homepageTemplate = `
                 <button class="fwd" data-icon="F" aria-label="fast forward"></button>
               </div>
             </div>
-            <h2 style="text-align: center">..or, prior to running the neural network, you can listen to the Michael Schumacher song :) RIP</h2>
+            <h2 style="text-align: center">..or, prior to running the neural network, you can listen to the Michael Schumacher song :)</h2>
 
         </div>
         <div class="col-sm-3"></div>
