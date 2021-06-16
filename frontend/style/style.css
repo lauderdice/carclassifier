@@ -1,0 +1,73 @@
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+.controls {
+    visibility: hidden;
+    opacity: 0.5;
+    width: 400px;
+    border-radius: 10px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: black;
+    box-shadow: 3px 3px 5px black;
+    transition: 1s all;
+    display: flex;
+}
+
+.player:hover .controls, player:focus .controls {
+    opacity: 1;
+}
+
+video {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
