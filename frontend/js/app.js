@@ -1,6 +1,8 @@
 const API_METHODS = Object.freeze({POST:"POST", GET:"GET"})
 // const API_HOST = "http://127.0.0.1:5000"
 const API_HOST = "http://52.166.138.234:1338"
+// const API_HOST = "http://0.0.0.0:1338"
+
 const API_ENDPOINTS = Object.freeze({CLASSIFY: API_HOST+"/classify", CARDETAILS: API_HOST+"/cardetails"})
 class Utils {
 		myRequest (url, method, body = null) {

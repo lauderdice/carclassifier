@@ -6,3 +6,4 @@ __pycache__
 .idea
 /api/uploads/*
 /api/model/cars196model.h5
+!/api/uploads/.gitkeep

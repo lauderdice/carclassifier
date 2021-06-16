@@ -7,9 +7,11 @@ def set_app_config(app):
     app.config["PROJECT_PATH"] = os.getenv("PROJECT_PATH")
     if sys.platform == "darwin":
         app.config["PROJECT_PATH"] = "/Users/janpresperin/Desktop/Škola/FEL ČVUT/OI/VIA/CarClassifierFlask/api"
+        app.config["PROJECT_PATH"] = "/var/www/api"
+
     else:
         app.config["PROJECT_PATH"] = "/home/azureuser/flask_carapi/carclassifier/api"
-
+        app.config["PROJECT_PATH"] = "/var/www/api"
     app.config["IMAGE_UPLOADS"] = os.path.join(app.config["PROJECT_PATH"], "uploads")
     app.config["MODEL_PATH"] = os.path.join(app.config["PROJECT_PATH"], "model/cars196model.h5")
     app.config["CLASSMAPPING_PATH"] = os.path.join(app.config["PROJECT_PATH"], "model/class_mappings.csv")
