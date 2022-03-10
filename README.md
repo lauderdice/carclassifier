@@ -6,4 +6,4 @@ The app is structured as both a template-based Flask application and an API whic
 
 The "frontend" directory contains a plain Javascript frontend which uses the Flask API but currently it is not yet implemented completely.
 
-[a relative link]/frontend
+[a relative link] /frontend
