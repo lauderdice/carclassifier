@@ -1,6 +1,6 @@
 # Neural network car classifier
 
-g
+
 ![Alt text](/screenshots/infographics.png?raw=true "Explanation")
 
 
@@ -11,3 +11,9 @@ The app is structured as both a template-based Flask application and an API whic
 The __frontend__ directory contains a plain Javascript frontend which uses the Flask API but currently it is not yet implemented completely.
 
 The __backend__ directory contains the Flask web app / API. The subdirectory __backend.app.classification_model__ contains a script for creating the Tensorflow model.
+
+![Alt text](/screenshots/homepage.png?raw=true "Homepage")
+
+![Alt text](/screenshots/prediction_result.png?raw=true "Prediction result")
+
+![Alt text](/screenshots/predicted_car_info.png?raw=true "Prediction result")
