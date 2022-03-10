@@ -18,7 +18,7 @@ The __backend__ directory contains the Flask web app / API. The subdirectory __b
 
 
 ### Example input image
-![Alt text](/screenshots/input_image.png?raw=true "Prediction result")
+![Alt text](/screenshots/input_image.jpeg?raw=true "Prediction result")
 
 
 ### Prediction of 3 most probable classes based on the input image
