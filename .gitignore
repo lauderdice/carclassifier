@@ -5,7 +5,8 @@
 __pycache__
 .idea
 /backend/app/uploads/*
-/backend/model/cars196model.h5
+/backend/app/common/ml_model_files/cars196model.h5
 !/backend/app/uploads/.gitkeep
 /frontend/media/.schumacher.mp4.icloud
 /frontend/media/.schumacher.mp4
+/frontend/media/schumacher.mp4
