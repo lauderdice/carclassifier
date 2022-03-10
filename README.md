@@ -4,6 +4,6 @@ This application is a Flask (https://flask-httpauth.readthedocs.io/en/latest/) a
 
 The app is structured as both a template-based Flask application and an API which could be used completely independently. 
 
-The "frontend" directory contains a plain Javascript frontend which uses the Flask API but currently it is not yet implemented completely.
+The __frontend__ directory contains a plain Javascript frontend which uses the Flask API but currently it is not yet implemented completely.
 
-[a relative link] /frontend
+The __backend__ directory contains the Flask web app / API. The subdirectory __backend.app.classification_model__ contains a script for creating the Tensorflow model.
