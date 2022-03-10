@@ -12,8 +12,17 @@ The __frontend__ directory contains a plain Javascript frontend which uses the F
 
 The __backend__ directory contains the Flask web app / API. The subdirectory __backend.app.classification_model__ contains a script for creating the Tensorflow model.
 
+
+### Homepage
 ![Alt text](/screenshots/homepage.png?raw=true "Homepage")
 
+
+### Example input image
+![Alt text](/screenshots/input_image.png?raw=true "Prediction result")
+
+
+### Prediction of 3 most probable classes based on the input image
 ![Alt text](/screenshots/prediction_result.png?raw=true "Prediction result")
 
+### Information related to the most probable class
 ![Alt text](/screenshots/predicted_car_info.png?raw=true "Prediction result")
