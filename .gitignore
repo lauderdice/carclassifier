@@ -4,6 +4,8 @@
 /.keras
 __pycache__
 .idea
-/api/uploads/*
-/api/model/cars196model.h5
-!/api/uploads/.gitkeep
+/backend/app/uploads/*
+/backend/model/cars196model.h5
+!/backend/app/uploads/.gitkeep
+/frontend/media/.schumacher.mp4.icloud
+/frontend/media/.schumacher.mp4

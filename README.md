@@ -1,4 +1,9 @@
-1. Run classifier.py file in classifier folder. This fill generate a model file (I assume some basic knowledge of Tensorflow)
-2. Change app.config["MODEL_PATH"] in web/utils/config to accomodate where your model is located. Also make sure to change other configs.
-3. Build with:
-`docker-compose up --build`
+# Neural network car classifier
+
+This application is a Flask (https://flask-httpauth.readthedocs.io/en/latest/) app serving as a classifier for car images. It provides an interface to a Tensorflow (https://www.tensorflow.org) model that predicts the carmaker of the car on the submitted image.
+
+The app is structured as both a template-based Flask application and an API which could be used completely independently. 
+
+The "frontend" directory contains a plain Javascript frontend which uses the Flask API but currently it is not yet implemented completely.
+
+[a relative link]/frontend

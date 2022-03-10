@@ -1,0 +1,9 @@
+APP_ENV=Development
+IMAGE_UPLOADS=app/uploads
+MODEL_PATH=app/common/ml_model_files/cars196model.h5
+CLASSMAPPING_PATH=app/common/ml_model_files/class_mappings.csv
+NUM_CAR_REVIEWS=15
+CORS_HEADERS=Content-Type
+FLASK_DEBUG=1
+YT_APIKEY=
+
